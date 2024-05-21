@@ -1,0 +1,26 @@
+from django.urls import path
+from .views import *
+urlpatterns = [
+    path('tourList', tourListView.as_view()),
+    path('tourDetail', tourDetailView.as_view()),
+    path('insert', tourInsert.as_view()),
+    path('update', tourUpdate.as_view()),
+    path('delete', tourDelete.as_view()),
+    path('tourReviewList', tourReviewList.as_view()),
+    path('tourReviewInsert', tourReviewInsert.as_view()),
+    path('tourReviewUpdate', tourReviewUpdate.as_view()),
+    path('tourReviewDetail', tourReviewDetail.as_view()),
+    path('tourItemList', tourItemList.as_view()),
+    path('tourItemInsert', tourItemInsert.as_view()),
+    path('tourItemUpdate', tourItemUpdate.as_view()),
+    path('savedPlaceList', SavedPlaceListView.as_view()),
+    path('savedPlaceListDetail', SavedPlaceDetailView.as_view()),
+    path('savedPlaceListInsert', SavedPlaceInsertView.as_view()),
+    path('savedPlaceListUpdate', SavedPlaceUpdateView.as_view()),
+    path('savedPlaceListDelete', SavedPlaceDeleteView.as_view()),
+    path('orderList', OrderListView.as_view()),
+    path('orderListDetail', OrderDetailView.as_view()),
+    path('orderListInsert', OrderInsertView.as_view()),
+    path('orderListUpdate', OrderUpdateView.as_view()),
+    path('orderListDelete', OrderDeleteView.as_view()),
+]
